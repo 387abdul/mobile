@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %} seeMore {% endblock title %}
+
+{% block content %}
+    <div class="specification">
+        <div>
+            <div>Use time</div>
+            <div>{{item.UseTime}}</div>
+        </div>
+        <div>
+            <div>Charging port</div>
+            <div>{{item.port}}</div>
+        </div>
+        <div>
+            <div>Compatible</div>
+            <div>{{item.compatible}}</div>
+        </div>
+        <div>
+            <div>Bluetooth</div>
+            <div>{{item.Bluetooth}}</div>
+        </div>
+        <div>
+            <div>Controlled</div>
+            <div>{{item.Controlled}}</div>
+        </div>
+    </div>
+    <div class="checkout">
+        <button>ADD TO CARD</button>
+        <button>CHECK OUT</button>
+    </div>
+{% endblock content %}
